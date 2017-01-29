@@ -1,4 +1,5 @@
 node_modules/
+persistent_storage/
 cache/
 assets/sat_tiles/
 logs/

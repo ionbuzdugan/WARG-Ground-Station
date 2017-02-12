@@ -47,7 +47,7 @@ module.exports = function (Marionette, Backbone) {
     dataCallback: function (packet_name, data) {
       //whether we should overwrite the existing data even if we receive null
       if (this.keep_last_packet){
-        _.each(data, function(value, header){
+        _.each(this.telemetry_data[packet_name], function(value, header){
           if (data[header] !== null){
             this.telemetry_data[packet_name][header] = data[header];
           }

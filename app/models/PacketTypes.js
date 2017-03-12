@@ -76,6 +76,8 @@ var PacketTypes = {
     'startupSettings': ['isPositiveNumber', 'isInteger'],
     'probe_status': ['isPositiveNumber', 'isInteger'],
     'RSSI': 'isValidNumber',
+    'uhf_rssi': 'isValidNumber',
+    'uhf_link_quality' : 'isValidNumber',
     'wireless_connection': ['isPositiveNumber', 'isInteger'],
     'autopilot_active': ['isPositiveNumber', 'isInteger'],
     'gps_status': ['isPositiveNumber', 'isInteger'],
